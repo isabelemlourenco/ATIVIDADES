@@ -1,0 +1,19 @@
+package atividadejulio;
+import java.util.Scanner;
+
+public class AreaEPerimetro {
+    public static void main(String[] args) {
+    int base, altura, area, perimetro;
+    Scanner teclado = new Scanner (System.in);
+    
+    System.out.print("Digite a base do retângulo: ");
+    base = teclado.nextInt();
+    System.out.print("Digite a altura do retângulo: ");
+    altura = teclado.nextInt();
+    area = base*altura;
+    perimetro = base*2+altura*2;
+    System.out.print("A area é: "+area+"\nO perimetro é: "+perimetro);
+           
+        
+    }
+}
