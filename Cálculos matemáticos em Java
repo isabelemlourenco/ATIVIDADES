@@ -1,0 +1,24 @@
+
+package atividadejulio;
+import java.util.Scanner;
+import java.lang.Math;
+
+public class RaizQuadrada {
+    public static void main(String[] args) {
+        float num, quadrado, cubo, raiz2, raiz3;
+        Scanner  teclado = new Scanner (System.in);
+        
+        System.out.print("Digite um número: ");
+        num = teclado.nextInt();
+        if (num>0){
+            quadrado = num*num;
+            cubo = num*num*num;
+            raiz2 =  (float) Math.sqrt(num);
+            raiz3 =  (float) Math.pow(num,(1/3.0));
+            System.out.print("Número ao quadrado: "+quadrado+"\nCubo: "+cubo+"\nRaiz quadrada: "+raiz2+"\nRaiz cúbica: "+raiz3);
+            
+        }        
+        
+    }
+    
+}
