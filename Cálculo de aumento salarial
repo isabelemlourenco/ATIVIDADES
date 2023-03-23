@@ -1,0 +1,21 @@
+
+package atividadejulio;
+import java.util.Scanner;
+
+public class PercentualAumento {
+    public static void main (String []args){
+        float sal, porc,porc1, aum, nsal;
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.print("Digite seu salário: ");
+        sal = teclado.nextFloat();
+        System.out.print("Digite a porcentagem (%)de aumento:  ");
+        porc = teclado.nextFloat();
+        porc1 = porc/100;
+        aum = sal*porc1;
+        nsal = sal + aum;
+        System.out.print("O aumento é de: R$"+aum+"\nO novo salário é: R$"+nsal);
+        
+               
+    }
+}
