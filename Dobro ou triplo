@@ -1,0 +1,22 @@
+
+package atividade5pts;
+import java.util.Scanner;
+
+public class Q4 {
+    public static void main (String[]args) {
+        int num, c;
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.print("Digite um número: ");
+        num = teclado.nextInt();
+        if (num>0){
+            c = 2*num;
+            System.out.println("O número "+num+" é positivo e seu dobro é "+c);
+            
+        } else {
+            c = 3*num;
+             System.out.println("O número "+num+" é negativo e seu triplo é "+c);
+        }
+    }   
+    
+}
