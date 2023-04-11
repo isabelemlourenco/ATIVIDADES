@@ -1,0 +1,24 @@
+
+package atividade5pts;
+import java.util.Scanner;
+
+public class Q3 {
+    public static void main (String[]args) {
+        int a, b, c;
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.print("Digite um número para A: ");
+        a = teclado.nextInt();
+        System.out.print("Digite um número para B: ");
+        b = teclado.nextInt();
+        if (a==b){
+            c = a+b;
+            System.out.println("A = B e a soma dos dois é "+c);
+        } else {
+            c = a*b;
+            System.out.println("A não é igual a B portanto a multiplicação dos dois é "+c);
+        }
+        
+    }
+    
+}
