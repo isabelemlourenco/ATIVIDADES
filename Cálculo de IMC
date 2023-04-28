@@ -29,6 +29,5 @@ public class Imc {
 	       System.out.println("OBESO MÓRBIDO ");
 	   }  
 	      
-	    
-	}
+ 	}
 }
