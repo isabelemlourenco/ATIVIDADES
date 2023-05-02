@@ -1,0 +1,36 @@
+
+package matricula;
+import java.util.Scanner;
+
+public class Matricula {
+
+    public static void main(String[] args) {
+        int matricula;
+        float n1, n2, n3, media;
+        Scanner teclado = new Scanner (System.in);
+        
+        System.out.println("Digite a matricula: ");
+        matricula = teclado.nextInt();
+        while (matricula>0){
+            System.out.println("Digite a primera nota: ");
+            n1 = teclado.nextFloat();
+            System.out.println("Digite a segunda nota: ");
+            n2 = teclado.nextFloat();
+            System.out.println("Digite a terceira nota: ");
+            n3 = teclado.nextFloat();
+            media = (n1+n2+n3)/3;
+            System.out.printf("A média é: %.2f",media);
+            if (media>=7){
+                System.out.println("\nAprovado");
+            } else if (media>=6 && media<7){
+                System.out.println("\nExame");
+            } else {
+                System.out.println("\nReprovado.");
+            }
+            
+            
+            System.out.println("Digite a matricula: ");
+            matricula = teclado.nextInt();
+        }
+    }    
+}
